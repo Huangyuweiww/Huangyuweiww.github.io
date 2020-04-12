@@ -10,7 +10,7 @@
 
 
 <p><a href="https://yinxiang.com/new/hc/articles/%e5%8d%b0%e8%b1%a1%e7%ac%94%e8%ae%b0-markdown-%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97/?utm_source=b1&utm_medium=b1&utm_term=q0kxq" target="_blank" rel="noopener">印象笔记官网</a></p>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p><img src="http://img1.imgtn.bdimg.com/it/u=1575338439,3281226464&fm=26&gp=0.jpg" alt="image"></p>
+<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p><img src="http://img5.imgtn.bdimg.com/it/u=4255483963,1178656574&fm=11&gp=0.jpg" alt="image"></p>
 <h3 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h3><table>
 <thead>
 <tr>
@@ -25,41 +25,12 @@
 <td>100G</td>
 </tr>
 </tbody></table>
-<p>###插入图表</p>
-<pre><code class="chart">,预算,收入,花费,债务
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">More info: [Server](https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;server.html)</span><br><span class="line"></span><br><span class="line">### Generate static files</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96; bash</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-June,5000,8000,4000,6000
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-July,3000,1000,4000,3000
-
-Aug,5000,7000,6000,3000
-
-Sep,7000,2000,3000,1000
-
-Oct,6000,5000,4000,2000
-
-Nov,4000,3000,5000,
-
-
-
-type: pie
-
-title: 每月收益
-
-x.title: Amount
-
-y.title: Month
-
-y.suffix: $
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">More info: [Server](https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;server.html)</span><br><span class="line"></span><br><span class="line">### Generate static files</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96; bash</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
