@@ -10,23 +10,9 @@
 
 
 <p><a href="https://yinxiang.com/new/hc/articles/%e5%8d%b0%e8%b1%a1%e7%ac%94%e8%ae%b0-markdown-%e5%85%a5%e9%97%a8%e6%8c%87%e5%8d%97/?utm_source=b1&utm_medium=b1&utm_term=q0kxq" target="_blank" rel="noopener">印象笔记官网</a></p>
-<h3 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h3><p><img src="http://img5.imgtn.bdimg.com/it/u=4255483963,1178656574&fm=11&gp=0.jpg" alt="image"></p>
-<a id="more"></a>
-<h3 id="插入表格"><a href="#插入表格" class="headerlink" title="插入表格"></a>插入表格</h3><table>
-<thead>
-<tr>
-<th>账户类型</th>
-<th>免费账户</th>
-<th>高级账户</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>账户流量</td>
-<td>60M</td>
-<td>100G</td>
-</tr>
-</tbody></table>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">More info: [Server](https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;server.html)</span><br><span class="line"></span><br><span class="line">### Generate static files</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96; bash</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">### 插入图片</span><br><span class="line">![image](http:&#x2F;&#x2F;img5.imgtn.bdimg.com&#x2F;it&#x2F;u&#x3D;4255483963,1178656574&amp;fm&#x3D;11&amp;gp&#x3D;0.jpg)</span><br><span class="line"></span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">### 插入表格</span><br><span class="line">| 账户类型 | 免费账户 | 高级账户 |</span><br><span class="line">| --- | --- | --- |</span><br><span class="line">| 账户流量 | 60M | 100G |</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
