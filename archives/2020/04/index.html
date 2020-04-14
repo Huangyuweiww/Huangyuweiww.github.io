@@ -23,8 +23,6 @@
 
 
 
-
-
   <meta name="description" content="直到这一刻微笑着说话为止，我至少留下了一公升眼泪">
 <meta property="og:type" content="website">
 <meta property="og:title" content="黄宇维的博客">
@@ -186,7 +184,7 @@
 
       <div class="post-title">
           <a class="post-title-link" href="/2020/04/09/hello-world/" itemprop="url">
-            <span itemprop="name">Markdown语法</span>
+            <span itemprop="name">Hello World</span>
           </a>
       </div>
 
@@ -321,7 +319,7 @@
       var url = decodeURI(visitors.id);
       var title = visitors.dataset.flagTitle;
 
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url }))&limit=1`)
         .then(response => response.json())
         .then(({ results }) => {
           if (results.length > 0) {
@@ -348,7 +346,8 @@
         return decodeURI(element.id);
       });
 
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+Counter('get', `?where=${encodeURIComponent(JSON.stringify({ url: { '$in': entries } }))}`)
+
         .then(response => response.json())
         .then(({ results }) => {
           for (let url of entries) {
