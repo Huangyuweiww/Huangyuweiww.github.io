@@ -23,19 +23,19 @@
 
 
 
-  <meta name="description" content="调用天气预报效果如下：1、打开Vs创建一个空网站2、在添加的空网站上右键添加服务引用。3、选择高级，然后点击添加web服务引用，并将要掉用的api地址粘贴到url文本框内，接着点击右侧的箭头（vs2017）,vs2019右侧没有小箭头，粘贴后直接回车。 4、调用接口.html文件 1234567891011121314&lt;div&gt;       &lt;h1&gt;Asp.Net 调用We">
+  <meta name="description" content="调用天气预报效果如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="asp.net调用WebServices">
 <meta property="og:url" content="http://huangyuweiww.github.io/2020/04/09/hello-world/index.html">
 <meta property="og:site_name" content="黄宇维的博客">
-<meta property="og:description" content="调用天气预报效果如下：1、打开Vs创建一个空网站2、在添加的空网站上右键添加服务引用。3、选择高级，然后点击添加web服务引用，并将要掉用的api地址粘贴到url文本框内，接着点击右侧的箭头（vs2017）,vs2019右侧没有小箭头，粘贴后直接回车。 4、调用接口.html文件 1234567891011121314&lt;div&gt;       &lt;h1&gt;Asp.Net 调用We">
+<meta property="og:description" content="调用天气预报效果如下：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://huangyuweiww.github.io/images/webserviceXiaoguo.png">
 <meta property="og:image" content="http://huangyuweiww.github.io/images/1.png">
 <meta property="og:image" content="http://huangyuweiww.github.io/images/2.png">
 <meta property="og:image" content="http://huangyuweiww.github.io/images/3.png">
 <meta property="article:published_time" content="2020-04-08T23:26:03.402Z">
-<meta property="article:modified_time" content="2020-04-30T14:59:41.106Z">
+<meta property="article:modified_time" content="2020-05-01T01:00:25.385Z">
 <meta property="article:author" content="黄宇维">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://huangyuweiww.github.io/images/webserviceXiaoguo.png">
@@ -198,7 +198,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-30 22:59:41" itemprop="dateModified" datetime="2020-04-30T22:59:41+08:00">2020-04-30</time>
+                <time title="修改时间：2020-05-01 09:00:25" itemprop="dateModified" datetime="2020-05-01T09:00:25+08:00">2020-05-01</time>
               </span>
 
           
@@ -233,7 +233,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="调用天气预报"><a href="#调用天气预报" class="headerlink" title="调用天气预报"></a>调用天气预报</h3><h4 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h4><p><img src="/images/webserviceXiaoguo.png" alt=""><br>1、打开Vs创建一个空网站<br><img src="/images/1.png" alt=""><br>2、在添加的空网站上右键添加服务引用。<br><img src="/images/2.png" alt=""><br>3、选择高级，然后点击添加web服务引用，并将要掉用的api地址粘贴到url文本框内，接着点击右侧的箭头（vs2017）,vs2019右侧没有小箭头，粘贴后直接回车。<br><img src="/images/3.png" alt=""></p>
+        <h3 id="调用天气预报"><a href="#调用天气预报" class="headerlink" title="调用天气预报"></a>调用天气预报</h3><h4 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h4><p><img src="/images/webserviceXiaoguo.png" alt=""></p>
+<a id="more"></a>
+<p>1、打开Vs创建一个空网站<br><img src="/images/1.png" alt=""><br>2、在添加的空网站上右键添加服务引用。<br><img src="/images/2.png" alt=""><br>3、选择高级，然后点击添加web服务引用，并将要掉用的api地址粘贴到url文本框内，接着点击右侧的箭头（vs2017）,vs2019右侧没有小箭头，粘贴后直接回车。<br><img src="/images/3.png" alt=""></p>
 <p>4、调用接口<br>.html文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;div&gt;</span><br><span class="line">       &lt;h1&gt;Asp.Net 调用WebService实现天气预报&lt;/h1&gt;</span><br><span class="line">       请输入城市名称：&lt;asp:TextBox ID=<span class="string">"txtcity"</span> runat=<span class="string">"server"</span>&gt;&lt;/asp:TextBox&gt;</span><br><span class="line">       &lt;asp:Label ID=<span class="string">"Label1"</span> runat=<span class="string">"server"</span> Style=<span class="string">"color: red"</span> BorderColor=<span class="string">"Red"</span> Text=<span class="string">"如 ：上海"</span>&gt;&lt;/asp:Label&gt;</span><br><span class="line">       &lt;asp:Button ID=<span class="string">"btncheck"</span> runat=<span class="string">"server"</span> Text=<span class="string">"查询"</span> Width=<span class="string">"69px"</span> OnClick=<span class="string">"btncheck_Click"</span> /&gt;&lt;br /&gt;</span><br><span class="line">       天气概况 ：</span><br><span class="line">       &lt;asp:Label ID=<span class="string">"lbtianqi"</span> runat=<span class="string">"server"</span> Style=<span class="string">""</span> BorderColor=<span class="string">"Red"</span> Text=<span class="string">""</span>&gt;&lt;/asp:Label&gt;</span><br><span class="line">       &lt;br /&gt;</span><br><span class="line">       天气实况 ：</span><br><span class="line">   &lt;br /&gt;</span><br><span class="line">       &lt;asp:TextBox ID=<span class="string">"txtcityweather"</span> runat=<span class="string">"server"</span> Height=<span class="string">"62px"</span> TextMode=<span class="string">"MultiLine"</span> Width=<span class="string">"258px"</span>&gt;&lt;/asp:TextBox&gt;</span><br><span class="line">       &lt;br /&gt;</span><br><span class="line">   &lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
